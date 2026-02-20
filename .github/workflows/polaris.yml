@@ -25,6 +25,6 @@ jobs:
           polaris_server_url: ${{ vars.POLARIS_SERVER_URL }}
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
           polaris_application_name: bootstrapCI
-          polaris_assessment_types: "SCA"
-          polaris_test_sca_type: "SCA-SIGNATURE"
+          polaris_assessment_types: "SCA,SAST"
+          polaris_test_sca_type: "SCA-SIGNATURE,SCA-PACKAGE"
           include_diagnostics: true
